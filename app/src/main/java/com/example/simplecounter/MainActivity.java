@@ -22,14 +22,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         TextView count = findViewById(R.id.count);
-        findViewById(R.id.title).clearFocus();
-        findViewById(R.id.count).clearFocus();
+        getCurrentFocus().clearFocus();
         switch (view.getId()) {
             case R.id.minus:
                 count.setText(String.valueOf(Integer.parseInt(count.getText().toString()) - 1));
                 break;
             case R.id.plus:
-            case R.id.layout:
+                //case R.id.layout:
                 count.setText(String.valueOf(Integer.parseInt(count.getText().toString()) + 1));
                 break;
             default:
