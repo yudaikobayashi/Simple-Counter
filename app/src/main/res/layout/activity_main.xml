@@ -15,6 +15,7 @@
         android:importantForAutofill="no"
         android:inputType="text"
         android:textSize="@dimen/huge_text"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/count"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -28,6 +29,7 @@
         android:inputType="number"
         android:text="@string/count"
         android:textSize="@dimen/huge_text"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/minus"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,7 +37,7 @@
 
     <Button
         android:id="@+id/minus"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/huge_button"
         android:layout_height="wrap_content"
         android:text="@string/minus"
         android:textSize="@dimen/huge_text"
@@ -46,7 +48,7 @@
 
     <Button
         android:id="@+id/plus"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/huge_button"
         android:layout_height="wrap_content"
         android:text="@string/plus"
         android:textSize="@dimen/huge_text"
