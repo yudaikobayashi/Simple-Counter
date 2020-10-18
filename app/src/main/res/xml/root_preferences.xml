@@ -6,8 +6,8 @@
         <SwitchPreference
             android:defaultValue="true"
             android:key="save_title"
-            android:summary="@string/save_count_summary"
-            android:title="@string/save_count_title" />
+            android:summary="@string/save_title_summary"
+            android:title="@string/save_title_title" />
 
         <SwitchPreference
             android:defaultValue="true"
